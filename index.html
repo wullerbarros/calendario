@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Nutricional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../FICHA/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calendário Nutricional</h1>
+    </header>
+    <main>
+        <div id="calendario-container"></div>
+        <div id="diario-refeicoes" style="display: none;">
+            <div class="ficha-container">
+                <div class="ficha-header">
+                    <h2>Diário de Refeições</h2>
+                    <button id="fechar-ficha">Fechar</button>
+                </div>
+                <iframe src="../FICHA/index.html" frameborder="0" width="100%" height="500"></iframe>
+                <div class="container">
+                    <div class="abas">
+                        <button class="aba ativo" data-refeicao="cafe">Café da Manhã</button>
+                        <button class="aba" data-refeicao="lanche-manha">Lanche da Manhã</button>
+                        <button class="aba" data-refeicao="almoco">Almoço</button>
+                        <button class="aba" data-refeicao="lanche-tarde">Lanche da Tarde</button>
+                        <button class="aba" data-refeicao="jantar">Jantar</button>
+                        <button class="aba" data-refeicao="ceia">Ceia</button>
+                    </div>
+                    <div class="conteudo-abas">
+                        <!-- conteúdo das abas -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="../FICHA/script.js"></script>
+</body>
+</html>
+
